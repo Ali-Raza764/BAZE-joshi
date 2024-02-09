@@ -9,9 +9,7 @@ const Search = ({ Open }) => {
       }`}
     >
       <FaSearch
-        className={`text-white text-lg block float-left cursor-pointer ${
-          !Open ? "px-4" : "px-2.5"
-        }`}
+        className={`text-white text-lg block float-left cursor-pointer ${Open && "mr-2"}`}
       />
       <input
         type={"search"}

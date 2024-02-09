@@ -6,7 +6,7 @@ import Search from "./Search";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-  const [Open, setOpen] = useState(false);
+  const [Open, setOpen] = useState(true);
 
   return (
     <div
