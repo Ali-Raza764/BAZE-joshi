@@ -1,4 +1,5 @@
 import React from "react";
+import img1 from "../assets/1.jpg"
 
 const Home = () => {
   const [active, setActive] = useState(0);
