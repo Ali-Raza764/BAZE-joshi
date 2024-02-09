@@ -1,5 +1,5 @@
 import React from "react";
-import { BsSearch } from "react-icons/bs";
+import { FaSearch } from "react-icons/fa";
 
 const Search = ({ Open }) => {
   return (
@@ -8,8 +8,10 @@ const Search = ({ Open }) => {
         !Open ? "px-2.5" : "px-4"
       }`}
     >
-      <BsSearch
-        className={`text-white text-lg block float-left cursor-pointer`}
+      <FaSearch
+        className={`text-white text-lg block float-left cursor-pointer ${
+          !Open ? "px-4" : "px-2.5"
+        }`}
       />
       <input
         type={"search"}

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { BsArrowLeftShort} from "react-icons/bs";
-import { MdAlbum, MdHome } from "react-icons/md";
+import { BsArrowLeftShort, BsSearch} from "react-icons/bs";
+import { MdAlbum, MdHome, MdGeneratingTokens } from "react-icons/md";
 import logo from "../../assets/logo.jpeg";
 import Search from "./Search";
 import { Link } from "react-router-dom";
@@ -15,9 +15,9 @@ const Sidebar = () => {
       } relative`}
     >
       <BsArrowLeftShort
-        className={`bg-white text-blue-500 text-3xl 
-        rounded-full absolute -right-3 top-9 border
-        border-blue-500 cursor-pointer duration-300 ${!Open && "rotate-180"}`}
+        className={`bg-white text-gary-700 text-3xl 
+        rounded-full absolute -right-3 top-9 border-4
+        border-gray-700 cursor-pointer duration-300 ${!Open && "rotate-180"}`}
         onClick={() => setOpen(!Open)}
       />
       <div className="inline-flex">
@@ -57,6 +57,7 @@ const Sidebar = () => {
          to="/GoPro"
          className="text-white text-xl p-2 flex items-center gap-x-2"
         >
+          <MdGeneratingTokens />
           {Open && "Go Pro"}
         </Link> 
       </nav>
