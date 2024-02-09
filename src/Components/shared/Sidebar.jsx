@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BsArrowLeftShort, BsSearch } from "react-icons/bs";
+import { BsArrowLeftShort} from "react-icons/bs";
 import { MdAlbum, MdHome } from "react-icons/md";
 import logo from "../../assets/logo.jpeg";
 import Search from "./Search";
@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-blue-500 h-screen p-5 pt-8 duration-300 ${
+      className={`bg-gray-700 h-screen p-5 pt-8 duration-300 ${
         Open ? "w-72" : "w-20"
       } relative`}
     >
@@ -53,6 +53,12 @@ const Sidebar = () => {
           <MdAlbum />
           {Open && "Albums"}
         </Link>
+        <Link
+         to="/GoPro"
+         className="text-white text-xl p-2 flex items-center gap-x-2"
+        >
+          {Open && "Go Pro"}
+        </Link> 
       </nav>
     </div>
   );
