@@ -59,6 +59,12 @@ const Sidebar = () => {
         >
           <MdGeneratingTokens />
           {Open && "Go Pro"}
+        </Link>
+        <Link
+         to="/Signup"
+         className="text-white text-xl p-2 items-center gap-x-2"
+        >
+          {Open && "Sign UP"}
         </Link> 
       </nav>
     </div>

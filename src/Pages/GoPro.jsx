@@ -2,7 +2,9 @@ import React from 'react'
 
 const GoPro = () => {
   return (
-    <div>GoPro</div>
+    <div>
+      GOPRO PAGE
+    </div>
   )
 }
 

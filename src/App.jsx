@@ -1,4 +1,4 @@
-import { Home, Albums, GoPro } from "./Pages";
+import { Home, Albums, GoPro, Signup } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PublicLayout from "./layouts/PublicLayout";
 
@@ -6,7 +6,8 @@ const App = () => {
   const publicRoutes = [
     { name: "Home", path: "", element: <Home /> },
     { name: "Albums", path: "albums", element: <Albums /> },
-    { name: "GoPro", path: "GoPro", element: <GoPro />}
+    { name: "GoPro", path: "GoPro", element: <GoPro />},
+    {name: "Signup", path: "Signup", element: <Signup/>}
   ];
   
   return (
