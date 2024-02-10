@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BsArrowLeftShort} from "react-icons/bs";
 import { MdAlbum, MdHome, MdGeneratingTokens } from "react-icons/md";
+import { IoMdLogOut } from "react-icons/io";
 import logo from "./../assets/logo.jpeg";
 import Search from "./Search";
 import { Link } from "react-router-dom";
@@ -62,8 +63,9 @@ const Sidebar = () => {
         </Link>
         <Link
          to="/Signup"
-         className="text-white text-xl p-2 items-center gap-x-2"
+         className="text-white text-xl flex p-2 items-center gap-x-2"
         >
+          <IoMdLogOut />
           {Open && "Sign UP"}
         </Link> 
       </nav>
