@@ -8,6 +8,7 @@ const App = () => {
     { name: "Albums", path: "albums", element: <Albums /> },
     { name: "GoPro", path: "GoPro", element: <GoPro />}
   ];
+  
   return (
     <BrowserRouter>
       <Routes>

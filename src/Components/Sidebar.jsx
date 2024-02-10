@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { BsArrowLeftShort, BsSearch} from "react-icons/bs";
+import { BsArrowLeftShort} from "react-icons/bs";
 import { MdAlbum, MdHome, MdGeneratingTokens } from "react-icons/md";
-import logo from "../../assets/logo.jpeg";
+import logo from "./../assets/logo.jpeg";
 import Search from "./Search";
 import { Link } from "react-router-dom";
 
