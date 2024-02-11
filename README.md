@@ -1,5 +1,5 @@
 BAZE 
-This project is Song website Name "BAZE"
+This project is Music website Name "BAZE"
 using: 
 vite
 npm 
