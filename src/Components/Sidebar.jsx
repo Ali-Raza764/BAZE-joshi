@@ -16,7 +16,7 @@ const Sidebar = () => {
       } relative`}
     >
       <BsArrowLeftShort
-        className={`bg-white text-gary-700 text-3xl 
+        className={`bg-white text-gray-700 text-3xl 
         rounded-full absolute -right-3 top-9 border-4
         border-gray-700 cursor-pointer duration-300 ${!Open && "rotate-180"}`}
         onClick={() => setOpen(!Open)}

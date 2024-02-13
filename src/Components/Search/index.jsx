@@ -4,12 +4,15 @@ import { FaSearch } from "react-icons/fa";
 const Search = ({ Open }) => {
   return (
     <div
-      className={`flex items-center rounded-md bg-slate-500 mt-6 px-4 py-2 ${
-        !Open ? "px-2.5" : "px-4"
+      className={`flex items-center justify-center rounded-md bg-slate-500 mt-6 ${
+        !Open ? "px-0 py-1" : "px-4 py-2"
       }`}
     >
       <FaSearch
-        className={`text-white text-lg block float-left cursor-pointer ${Open && "mr-2"}`}
+        size={25}
+        className={`text-white block float-left cursor-pointer ${
+          Open && "mr-2"
+        }`}
       />
       <input
         type={"search"}

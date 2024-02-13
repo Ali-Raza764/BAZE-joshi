@@ -3,19 +3,34 @@
 @tailwind utilities;
 
 .clip-hidden {
-    clip-path: ellipse(0 0 at 0% 0%);
-    opacity: 0;
+  clip-path: ellipse(0 0 at 0% 0%);
+  opacity: 0;
 }
 .clip-visible {
-    clip-path: ellipse(750px 750px at 0% 0%);
+  clip-path: ellipse(750px 750px at 0% 0%);
 }
-  
+
 #back,
 #forward {
-    @apply absolute z-[5] -translate-y-2/4 text-gray-100 hover:scale-125 cursor-pointer duration-[0.4s] ease-out px-0 py-2.5 border-0 top-2/4;
+  @apply absolute z-[5] -translate-y-2/4 text-gray-100 hover:scale-125 cursor-pointer duration-[0.4s] ease-out px-0 py-2.5 border-0 top-2/4;
 }
-  
+
 .content {
-    @apply text-[aliceblue] absolute w-full z-[5] text-center backdrop-blur-[2px] duration-[1s] px-0 py-[15px] left-0 bottom-0;
-    background: #ffffff22;
+  @apply text-[aliceblue] absolute w-full z-[5] text-center backdrop-blur-[2px] duration-[1s] px-0 py-[15px] left-0 bottom-0;
+  background: #ffffff22;
+}
+body {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  color: white;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.601);
+    border-radius: 10px;
+  }
 }
