@@ -3,6 +3,7 @@ import ImgSlider from "../Components/ImgSlider";
 import { FaMusic } from "react-icons/fa";
 
 const Home = () => {
+
   return (
     <div className="overflow-y-auto h-screen p-3 md:px-6 md:py-5">
       <div className="trending flex flex-col">

@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import { RxDotFilled } from 'react-icons/rx';
-import { FaMusic } from "react-icons/fa";
 
 const ImgSlider = () => {
   const slides = [
     {
-      url: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2620&q=80',
+      url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
     },
     {
       url: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
@@ -42,7 +41,7 @@ const ImgSlider = () => {
   };
 
   return (
-    <div className='max-w-[1400px] h-[100vh] w-full m-auto py-6 px-4 relative group'>
+    <div className='max-w-[1400px] h-[82vh] w-full m-auto py-6 px-4 relative group'>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
