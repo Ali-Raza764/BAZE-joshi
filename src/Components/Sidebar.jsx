@@ -11,9 +11,9 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`bg-gray-700 h-screen p-5 pt-8 duration-300 ${
+      className={`bg-gray-700 p-5 pt-8 duration-300 ${
         Open ? "w-72" : "w-20"
-      } relative`}
+      } relative hidden md:block`}
     >
       <BsArrowLeftShort
         className={`bg-white text-gray-700 text-3xl 
